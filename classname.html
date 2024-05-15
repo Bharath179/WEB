@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        h1{
+            display:none;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="blue">1. Java</h1>
+    <h1 class="orange">2. java-script</h1>
+    <h1 class="orange">3. spring</h1>
+    <h1 class="orange">4. React</h1>
+    <h1 id="orange">5. HTML</h1>
+    <button onclick="show()">orange</button>
+    <script>
+        function show ()
+        {
+            var x=document.getElementsByClassName("orange")
+            for(let i=0;i<x.length;i++)
+            {
+                x[i].style.color="orange"
+            }
+        }
+    </script>
+</body>
+
+</html>

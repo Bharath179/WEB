@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>html</h1>
+    <h1>css</h1>
+    <h1>js</h1>
+    <h1>react js</h1>
+    <button onclick="abc()" ondblclick="dbl()">red color</button>
+    <button onclick="clr()">reset</button>
+    <script>
+        function abc()
+        {
+       var tag=document.getElementsByTagName("h1")
+        for (let i = 0; i < tag.length; i++) {
+            tag[i].style.color="red"
+            tag[i].style.background="aqua"
+            tag[i].style.border="2px solid black"
+            
+        }
+        }
+        function clr(){
+            location.reload()
+
+        }
+        function db1(){
+            var x=document.getElementsByName("h1")
+            for (let i = 0; i < x.length; i++) {
+                x[i].style.border="2px solid blue"
+                
+            }
+        }
+    </script>
+</body>
+</html>

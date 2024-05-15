@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+
+</head> 
+<style>
+    div{
+        border: 2px solid;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        background-color: antiquewhite;
+        padding: 10px;
+    }
+    
+    h1{
+        border:2px double red;
+        font-style: italic;
+        background-color: rgb(47, green239, 175);
+    }
+</style>
+<body>
+    <div>
+        <h1 id="heading"></h1>
+        <button onclick="inc()">inc</button>
+        <button onclick="dec()">dec</button>
+        <button onclick="reset()">reset</button>
+
+    </div>
+    <script>
+        count=0;
+        function inc()
+        {
+            x=count=count+1;
+            document.getElementById("heading").innerHTML=count
+        }
+        function dec()
+        {
+            count=count-1;
+            document.getElementById("heading").innerHTML=count
+
+        }
+        function reset()
+        {
+            count=0;
+            document.getElementById("heading").innerHTML=count
+        }
+    </script>
+   
+<h1>1)select scripting language</h1>
+<input type="radio" name="r1" id="input1">JAVA
+<br></br>
+<input type="radio" name="r1" id="input2">HTML
+    <br></br>
+    <input type="radio" name="r1" id="input3">CSS
+    <br></br>
+    <input type="radio" name="r1" id="input4">JS
+    <br></br>
+    <button onclick="vali()">SUBMIT</button>
+    <script>
+        function vali()
+        {
+           var x1=document.getElementById("input1")
+           var x2=document.getElementById("input2")
+           var x3=document.getElementById("input3")
+           var x4=document.getElementById("input4")
+
+           if(x1.checked==true)
+           {
+              alert("answer select is JAVA")
+           }
+           else if(x2.checked==true)
+           {
+            alert("answer selected is HTML")
+           }
+           else if(x3.checked==true)
+           {
+            alert("answer selected is CSS")
+           }
+           else if(x4.checked==true)
+           {
+            alert("answer selected is JS")
+
+           }
+           else{
+            alert("no answer is selected");
+           }
+        }
+    </script>
+
+
+
+
+    
+</body>
+</html>
